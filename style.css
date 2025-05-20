@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte01: "Barriecito", system-ui;
+}
 
 body{
     background-color: black;
@@ -10,27 +20,85 @@ header{
     max-width: 1000px;
     min-width: 450px;
     margin: auto;
+    margin-top: 10px;
     margin-bottom: 5px;
     border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0px;
+    height: 130px;
 }
 
 header > h1{
-    margin: auto;
+    text-align: center;
+    font-family: var(--fonte01);
+    margin-top: 0px;
+    font-size: 3em;
 }
 
+header > nav{
+    margin-top: 20px;
+}
+
+
+header > nav > a > img#suporte {
+    margin-right: 2.5px;
+    width: 15px;
+    height: 20px;
+}
+
+header > nav > a > img#config {
+    margin-right: 2.5px;
+    width: 15px;
+    height: 20px;
+}
+
+header > nav > a > img#sair {
+    margin-right: 2.5px;
+    width: 15px;
+    height: 20px;
+}
+
+header > nav > a > img#suporte:hover{
+    margin-top: -5px;
+    margin-right: -2.5px;
+    width: 20px;
+    height: 25px;
+}
+
+header > nav > a > img#config:hover{
+    margin-top: -5px;
+    margin-right: -2.5px;
+    width: 20px;
+    height: 25px;
+}
+
+header > nav > a > img#sair:hover{
+    margin-top: -5px;
+    margin-right: -5px;
+    width: 20px;
+    height: 25px;
+}
+
+
 header > #money > p{
-    margin-bottom: 0px;
+    text-align: right;
+    margin-right: 100px;
+    padding-bottom: 15px;
+}
+
+header > #money > #dinheiro{
+    margin-top: -45px;
 }
 
 main{
     background-color: white;
     margin: auto;
-    margin-top: 0px;
     min-width: 450px;
     max-width: 1000px;
     min-height: 450px;
-    max-height: 900px;
-    border-radius: 20px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 body > nav#menu{
